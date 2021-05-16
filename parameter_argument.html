@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Function</h1>
+    <h2>Basic</h2>
+    <ul>
+      <script>
+        function two(){ //나 이제 함수 만들거야 -->function 그 다음에 이름이 오고
+                        //가로 대가로 그 다음에 하고싶은거 써!
+          document.write('<li>2-1</li>');
+          document.write('<li>2-2</li>');
+        }
+        document.write('<li>1</li>');
+        two(); //원하는 곳에 함수를 놓으면 실행이 된다
+        document.write('<li>3</li>');
+        two();
+        function sum(left,right){ // sum이라는 함수를 정의하고 파라미터 알규먼트 매개변수 --> 입력값을 가로 안에 정의하고 !!!!!!! 이게 포인트 그다음은 하고싶은거 기능 넣기
+          document.write(left+right+'<br>')
+        }
+        sum(2,5);//sum이라는 함수에 매개변수 또는 파라미터 또는 알규먼트 또는 입력값을 left = 2 right = 5 를 넣고 함수를 돌리겠다 이말이다~~~
+        sum(10,20);
+      </script>
+    </ul>
+  </body>
+</html>
