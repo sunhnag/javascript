@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>객체의 생성과 출력</h1>
+    <script>
+      var coworkers = {
+        "programmer" : "sun", //여기서 중요한건 이 쉼표로 안에 데이터를 추가한다.
+        "designer"  : "kyung"// 따음표로 하네...신기하네
+      }
+      document.write(coworkers.programmer+"<br>");
+      document.write("designer: "+ coworkers.designer+"<br>");
+      coworkers.teacher = "egoing";// 데이터의 추가
+      document.write("teacher: "+ coworkers.teacher+"<br>");
+      coworkers["data scientist"] = "sunhang";
+      document.write("data scientist : "+coworkers["data scientist"]);
+    </script>
+  </body>
+</html>
