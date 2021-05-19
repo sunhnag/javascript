@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>객체의 생성과 출력</h1>
+    <script>
+      var coworkers = {
+        "programmer" : "sun", //여기서 중요한건 이 쉼표로 안에 데이터를 추가한다.
+        "designer"  : "kyung"// 따음표로 하네...신기하네
+      }
+      document.write(coworkers.programmer+"<br>");
+      document.write("programmer: "+ coworkers.programmer+"<br>");
+      document.write("designer: "+ coworkers.designer+"<br>");
+      coworkers.teacher = "egoing";// 데이터의 추가
+      document.write("teacher: "+ coworkers.teacher+"<br>");
+      coworkers["data scientist"] = "sunhang";
+      document.write("data scientist : "+coworkers["data scientist"]);
+    </script>
+    <h1>객체의 모든 데이터 가져오기 : for문 사용하기</h1>
+    <script>
+      for (var key in coworkers){
+        document.write(key+"<br>");
+      }
+
+      for(var key in coworkers){
+        document.write(key+': '+coworkers[key]+'<br>');
+      }
+    </script>
+    <h1>객체의 함수 생성과 호출</h1>
+    <script>
+      coworkers.showAll = function(){
+        for(var key in this//coworkers){
+          document.write(key+': '+this[key]+'<br>');
+      }// this는 이 객체에서 coworkers는 this로 쓰겠다 왜? 이유는 객체이름이 바뀌어도 쓸수 있다.
+    }
+    coworkers.showAll();
+    </script>
+  </body>
+</html>
